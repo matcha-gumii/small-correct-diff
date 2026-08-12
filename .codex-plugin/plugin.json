@@ -1,0 +1,37 @@
+{
+  "name": "small-correct-diff",
+  "version": "0.1.0",
+  "description": "Keep coding-agent changes correct, complete, safe, and small.",
+  "author": {
+    "name": "alkalinejapan",
+    "url": "https://github.com/alkalinejapan"
+  },
+  "homepage": "https://github.com/alkalinejapan/small-correct-diff",
+  "repository": "https://github.com/alkalinejapan/small-correct-diff",
+  "license": "MIT",
+  "keywords": [
+    "codex",
+    "coding-agent",
+    "yagni",
+    "minimalism",
+    "code-review"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Small Correct Diff",
+    "shortDescription": "Prefer the smallest correct and complete change",
+    "longDescription": "Guide coding agents to reuse existing code, standard libraries, and native features before adding abstractions or dependencies, without sacrificing correctness or safety.",
+    "developerName": "alkalinejapan",
+    "category": "Productivity",
+    "capabilities": [
+      "Instructions",
+      "Code review"
+    ],
+    "websiteURL": "https://github.com/alkalinejapan/small-correct-diff",
+    "defaultPrompt": [
+      "Use Small Correct Diff for this coding task.",
+      "Review this diff for unnecessary complexity.",
+      "Find the smallest correct implementation."
+    ]
+  }
+}
