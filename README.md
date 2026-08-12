@@ -1,5 +1,7 @@
 # Small Correct Diff
 
+[日本語](README.ja.md) | English
+
 **A Codex plugin and portable Agent Skill for keeping AI-written code small without turning it into code golf.**
 
 Coding agents sometimes add more than a task needs: new helpers, layers,
@@ -71,6 +73,7 @@ small-correct-diff/
 ├── skills/small-correct-diff/SKILL.md
 ├── AGENTS.md
 ├── README.md
+├── README.ja.md
 └── LICENSE
 ```
 
