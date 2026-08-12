@@ -54,15 +54,31 @@ codex plugin add small-correct-diff@small-correct-diff
 
 Restart Codex and start a new task after installation.
 
+### Choose the scope
+
+Installing the plugin makes its skill available across your Codex environment.
+Codex may select it automatically when a request matches the skill description,
+which includes common coding work such as feature implementation, bug fixes,
+refactoring, code review, and dependency changes.
+
+Choose the setup that matches the scope you want:
+
+- **Available across projects:** Install the plugin as shown above. Codex can
+  select the skill for matching requests in any project.
+- **Only when explicitly requested:** Keep the plugin installed and invoke
+  `$small-correct-diff` in the tasks where you want to use it.
+- **Always on for one project only:** Do not rely on plugin auto-selection.
+  Copy this repository's `AGENTS.md` to the target repository root instead.
+
+If the target repository already has an `AGENTS.md`, merge these rules into it
+instead of replacing the existing project instructions. Codex applies a
+repository-root `AGENTS.md` within that project, including its subdirectories.
+
 ## Other Agent Skills-compatible clients
 
 Copy `skills/small-correct-diff` into the skills location used by your agent.
 Keep the directory name `small-correct-diff` so it matches the `name` in
 `SKILL.md`.
-
-To apply the policy continuously to one Codex project, copy `AGENTS.md` to that
-repository's root. If the repository already has an `AGENTS.md`, merge the
-rules instead of replacing its project-specific instructions.
 
 ## Structure
 
