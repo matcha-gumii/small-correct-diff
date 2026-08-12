@@ -80,6 +80,30 @@ Copy `skills/small-correct-diff` into the skills location used by your agent.
 Keep the directory name `small-correct-diff` so it matches the `name` in
 `SKILL.md`.
 
+## Compatibility and basic validation
+
+Small Correct Diff is an instruction-only plugin. It does not include an MCP
+server, hooks, or OS-specific executable code. Even so, plugin loading and agent
+behavior can vary with the Codex version, model, operating system, project
+configuration, and available development tools.
+
+Before using it in an important project, perform a quick smoke test on your
+environment:
+
+1. Create or open a small disposable Git repository and commit the baseline.
+2. Install the plugin, restart Codex, and start a new task.
+3. Confirm that the plugin is available, then request one small, clearly scoped
+   code change.
+4. Review `git diff` and confirm that unrelated files were not changed.
+5. Where practical, run the existing build, tests, type checks, or lint commands,
+   or manually verify the affected behavior.
+6. Confirm that the plugin can be disabled or removed normally.
+
+On Windows, also check that Skill and README text is not garbled, paths work as
+expected, and line-ending conversion does not turn an entire file into a diff.
+Passing this check is evidence of basic compatibility on that environment, not a
+guarantee that every generated change will be correct in every repository.
+
 ## Structure
 
 ```text
