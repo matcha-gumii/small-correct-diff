@@ -6,8 +6,8 @@
     "name": "alkalinejapan",
     "url": "https://github.com/alkalinejapan"
   },
-  "homepage": "https://github.com/alkalinejapan/small-correct-diff",
-  "repository": "https://github.com/alkalinejapan/small-correct-diff",
+  "homepage": "https://github.com/matcha-gumii/small-correct-diff",
+  "repository": "https://github.com/matcha-gumii/small-correct-diff",
   "license": "MIT",
   "keywords": [
     "codex",
@@ -27,7 +27,7 @@
       "Instructions",
       "Code review"
     ],
-    "websiteURL": "https://github.com/alkalinejapan/small-correct-diff",
+    "websiteURL": "https://github.com/matcha-gumii/small-correct-diff",
     "defaultPrompt": [
       "Use Small Correct Diff for this coding task.",
       "Review this diff for unnecessary complexity.",

@@ -46,7 +46,7 @@ A tiny wrong patch is worse than a slightly larger correct one.
 Add this repository as a plugin marketplace, then install the plugin:
 
 ```bash
-codex plugin marketplace add alkalinejapan/small-correct-diff
+codex plugin marketplace add matcha-gumii/small-correct-diff
 codex plugin add small-correct-diff@small-correct-diff
 ```
 
